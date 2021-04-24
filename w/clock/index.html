@@ -1,0 +1,28 @@
+<head>
+<title>Clock</title>
+<script type="text/javascript" src="main.js"></script>  
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="gradient"></div>
+	<div id="noise"></div>
+	<div class="center"> <!-- For centering the ::before :-->
+		<div id="timeBox">
+			<label id="switchLabel">
+				<input id="switch" type="checkbox">
+				<div id="switchIcon"></div>
+			</label>
+			<div id="clock">
+				<!-- These placeholders don't need to be here, it's just to prevent the studder when loading in. -->
+				<p id="add" class="accent">GMT+0</p>
+				<p id="time">00:0:00AM</p>
+				<p id="date" class="accent">Thursday, January 1, 1974</p>
+				<input id="slider" type="range" min="-24" max="24" value="0">
+				<p id="tooltip">GMT+0</p>
+				<p id="customText" class="accent"></p>
+			</div>
+			<div id="settings">
+			</div>
+		</div>
+	</div>
+</body>
